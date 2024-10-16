@@ -10,6 +10,8 @@ import { ListCategoriesComponent } from './list-categories/list-categories.compo
 import { HighliterDirective } from './highliter.directive';
 import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
+import { NotfoundComponent } from './notfound/notfound.component';
+import { ProductsCategoryComponent } from './products-category/products-category.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +21,9 @@ import { FilterPipe } from './filter.pipe';
     HomeComponent,
     ListCategoriesComponent,
     HighliterDirective,
-    FilterPipe
+    FilterPipe,
+    NotfoundComponent,
+    ProductsCategoryComponent
   ],
   imports: [
     BrowserModule,
