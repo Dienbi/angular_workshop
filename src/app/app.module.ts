@@ -12,6 +12,7 @@ import { FormsModule } from '@angular/forms';
 import { FilterPipe } from './filter.pipe';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { ProductsCategoryComponent } from './products-category/products-category.component';
+import { DetailCategoryComponent } from './detail-category/detail-category.component';
 
 @NgModule({
   declarations: [
@@ -23,12 +24,13 @@ import { ProductsCategoryComponent } from './products-category/products-category
     HighliterDirective,
     FilterPipe,
     NotfoundComponent,
-    ProductsCategoryComponent
+    ProductsCategoryComponent,
+    DetailCategoryComponent
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
-    FormsModule 
+    FormsModule
 
   ],
   providers: [],

@@ -6,8 +6,8 @@
       <div  appHighliter class="col-md-4" *ngFor="let category of categories | filter:searchTerm" style="margin-bottom: 20px;">
           <img [src]="category.image" [alt]="category.title" class="img-fluid h-50 w-75" (click)="showDesc(category.description)">
           <h3>{{ category.title | uppercase }}</h3>
-          
-          <button *ngIf="category.available" class="btn btn-primary" [routerLink]="['/productCategory',category.id]">Voir produits</button>
+          <button *ngIf="category.available" class="btn btn-primary" [routerLink]="['/productCategory',category.id]"[queryParams]="{'name':category.title}">Voir produits</button>
+          <button *ngIf="category.available" class="btn btn-primary" [routerLink]="['details']"[queryParams]="{'desc':category.description}">Voir details</button>
           <p *ngIf="!category.available" class="text-danger">Catégorie non disponible</p>
       </div>
   </div>
